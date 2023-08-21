@@ -1,14 +1,24 @@
-calculate({required double peso, required double altura}) {
+/// Calcula o IMC.
+///
+/// Retorna o valor em double.
+double calculate({required double peso, required double altura}) {
+  // tive que multiplicar por 10000 para fica proximo dovalor de classificacao.
   double resultado = peso / (altura * altura) * 10000;
   try {
+    // Converto o resultado em string com duas posicao apos a ',' e converte a numeros novamente.
     resultado = double.parse(resultado.toStringAsFixed(2));
     return resultado;
   } catch (e) {
-    throw e;
+    rethrow;
   }
 }
 
-imcClassificacao(double value) {
+/// Classifica o nivel de peso.
+///
+/// [value] valor do imc.
+///
+/// Retorna uma String.
+String imcClassificacao(double value) {
   if (value < 16) {
     return 'Magreza gave';
   } else if (value >= 16 && value < 17) {
