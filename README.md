@@ -6,9 +6,9 @@ Realiza o calculo de IMC.
 Esse Projeto é um dos disafio proposto no Santander Bootcamp 2023 - Mobile com Flutter no portal Dio.me
 
 ### Desafios
-- [ ] Ler dados via terminal (nome, peso e altura).
-- [ ] Tratar as exceçôes.
+- [x] Ler dados via terminal (nome, peso e altura).
+- [x] Tratar as exceçôes.
 - [x] Calcular IMC.
-- [ ] Exibe o resultado.
-- [ ] Realizacao de Testes.
+- [x] Exibe o resultado.
+- [x] Realizacao de Testes.
 
