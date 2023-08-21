@@ -1,5 +1,5 @@
-import 'package:imc_desafio_dio/imc_desafio_dio.dart' as imc_desafio_dio;
+import 'package:imc_desafio_dio/imc.dart' as imc_desafio_dio;
 
 void main(List<String> arguments) {
-  print('Hello world: ${imc_desafio_dio.calculate()}!');
+  imc_desafio_dio.calculate(peso: 57.8, altura: 158);
 }
